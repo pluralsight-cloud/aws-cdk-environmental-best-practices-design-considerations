@@ -7,7 +7,7 @@ import { Construct } from 'constructs';
 interface LambdaFunctionProps {
   stageName: string;
   table: dynamodb.TableV2;
-  vpc: ec2.Vpc;
+  vpc: ec2.IVpc;
 }
 
 export class LambdaFunction extends Construct {
